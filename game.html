@@ -63,7 +63,7 @@
 
 			function keyPressed(event) {
 				velY += JUMP_HEIGHT;
-				velX += JUMP_HEIGHT;
+				velX *= -1;
 			}
         }
     </script>
@@ -72,5 +72,6 @@
     <canvas id="demoCanvas" width="640" height="480">
         alternate content
     </canvas>
+    <h1>Click any key to <span id="jump">jump!</span></h1>
 </body>
 </html>
