@@ -6,20 +6,32 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>My Website</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/ico" href="img/cookie.png" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <style>
+
+            body {
+              padding-top: 50px;
+              padding-bottom: 20px;
+            }
+
+            .btn {
+              background: none;
+              color: inherit;
+            }
+
+            footer {
+              text-align: center;
+            }
+
+        </style>
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -31,64 +43,90 @@
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">Benjo</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
+          <ul class="nav navbar-nav">
+            <li class="nav_button"><a href="#about_me">about me</a></li>
+            <li class="nav_button dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#websites">websites made<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="mma.html">pearl boxing gym</a></li>
+                <li><a href="guitar.html">guitar lessons website</a></li>
+                <li><a href="#">ipsum</a></li>
+              </ul>
+            </li>
+          </ul>
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <div class="jumbotron container-fluid">
       <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        <h1>Welcome!</h1>
+        <p>Hello! My name is Benjo Kho, and this is me playing around with websites. I'm using this to play around with the things I've learned about HTML and CSS. Go ahead and look around!</p>
       </div>
     </div>
 
     <div class="container">
       <!-- Example row of columns -->
+      <h1 class="Websites"><strong>Websites Made</strong></h1>
       <div class="row">
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2><a href="mma.html">Boxing Website</a></h2>
+          <p>Link to boxing gym website I'm practicing on. It's normal website with a splash page that uses the one-page website's philosophy. I was initially trying to improve <a href="http://www.hybridyawyan.net">this MMA website</a> but I ended up making a pure boxing gym due to the availability of clearer pictures. I don't own any of these pictures. </p>
         </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2><a href="guitar.html">Guitar Lessons Website</a></h2>
+          <p>This is me trying to improve <a href="http://www.kellyvalleau.com">this guitar lesson website</a>. I'm subscribed to that guy and seeing such a skilled guitarist work with such mediocre tech saddens me. I want to make something better and see if I could offer my services to him.</p>
        </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2><a href="game.html">Bouncy Ball</a></h2>
+          <p>Ball that bounces. I made this in createJS so I remind me how to use it. I made a game before but I lost it. Now that I have a place to put it, it's gone. Ahh well.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <hr/>
+          <h3>TODO</h3>
+          <ol class="todo_items">
+            <li><del>make each picture take up whole width</del></li>
+            <li><del>make each text paragraph overlap its corresponding pictures</del></li>
+            <li><del>add a legitimate navigation bar</del></li>
+            <li>add carousel</li>
+            <li>add pictures of coaches</li>
+            <li>create a Call to Action contact form</li>
+            <li>make all photos colored FOR MOBILE</li>
+            <li><del>make navbar collapsible and bootstrappy</del></li>
+            <li>in essence make it look like <a href="http://www.crossfitwestside.com">this</a></li>
+          </ol>
+        </div>
+        <div class="col-md-4">
+          <hr/>
+          <h3>TODO</h3>
+          <ol class="todo_items">
+            <li><del>customize color theme</del></li>
+            <li><del>adding Youtube links</del></li>
+            <li>add the different websites so links actually function</li>
+            <li>fix login area</li>
+            <li>learn backend for the login and members-only area</li>
+          </ol>
         </div>
       </div>
 
-      <hr>
-
       <footer>
-        <p>&copy; Company 2015</p>
+        <hr/>
+        <p>&copy; Kho Productions - 2015 All Rights Reserved.</p>
       </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </div> <!-- /container -->        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script>
